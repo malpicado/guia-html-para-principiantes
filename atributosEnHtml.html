@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos en HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Atributos en HTML - qué son, para qué sirven y cuáles son
+        </h1>
+    </header>
+    <section>
+        <p>Aprendamos qué son, para qué sirven y cómo se ponen los atributos HTML, dentro de las etiquetas para controlar mejor las características de nuestros elementos HTML; los atributos nos dan mayor poder al momento de personalizar y agregar ciertos aspecto en nuestras páginas web.</p>
+    </section>
+    <section>
+        <h2>Qué son los atributos en HTML</h2>
+        <p>Los atributos en HTML se pueden considerar como información adicional que se coloca siempre en la etiqueta de apertura, esto para añadir, complementar información o significado al elemento HTML al que estamos colocando.</p>
+        <blockquote><strong>Los atributos HTML van siempre dentro de la etiqueta de apertura y sirven para modificar o agregar alguna característica al contenido.</strong></blockquote>
+    </section>
+    <section>
+        <h2>Lista de los atributos más usados en HTML</h2>
+        <ul>
+            <li>Id =” ”: Para identificar un elemento único.</li>
+            <li>class =” ”: Identificador múltiple.</li>
+            <li>align =” ”: Alineación de contenido.</li>
+            <li>border =” ”: Para darle borde al contenido.</li>
+            <li>style =” ”: Para darle un estilo al contenido.</li>
+            <li>background-color =” ”: Para color de fondo.</li>
+            <li>href =” ”: Para enlaces html.</li>
+            <li>height =” ”: Para determinar altura.</li>
+            <li>width =” ”: Para determinar ancho.</li>
+            <li>src=“ ”: Para imágenes.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Cómo colocar atributos en HTML</h2>
+        <p>Un atributo se escribe de la siguiente manera:</p>
+        <fieldset>
+            <code>Atributo="<b>valor</b>"</code>
+        </fieldset>
+        <p>En esa forma: el nombre del atributo, seguido del signo igual (=) y entre comillas el valor, todo esto siempre dentro de la etiqueta de apertura.</p>
+        <p>Por lo tanto el atributo escrito en una etiqueta (por ejemplo párrafo) se ve así:</p>
+        <fieldset>
+            <code>
+                &lt;p atributo="valor"&gt;Este es un párrafo&lt;/p&gt;
+            </code>
+        </fieldset>
+    </section>
+    <section>
+        <h2>Valor de un atributo</h2>
+        <p>Cuando se hace uso de un atributo HTML se debe especificar su valor, este puede representar una cantidad exacta, característica especifica o simplemente en que medida se ejecutará dicho atributo.</p>
+        <p>El valor se expresa entre comillas después del signo de (=), de acuerdo al atributo, pueden haber una variedad de valores disponibles. Por ejemplo, en caso de <code>align</code> puede tomar el valor de <code>center</code> (centro), <code>right</code> (derecha), <code>left</code> (izquierda), <code>justify</code> (justificado).</p>
+    </section>
+    <section>
+        <h3>Atributo: valores</h3>
+        <ul>
+            <li><b>Id</b>.- su valor puede ser cualquier palabra que sirve para identificar un elemento.</li>
+            <li><b>align</b>.- alineación, sus valores pueden ser: <code>center</code>, <code>right</code>, <code>left</code>, <code>justify</code>.</li>
+            <li><b>border-style</b>.- estilo de borde, los valores disponibles son: <code>solid</code>, <code>dotted</code>, <code>dashed</code>, <code>double</code>, etc.</li>
+            <li><b>bgcolor</b>.- Para color de fondo para ciertos elementos como body, el valor puede ser cualquier color en formato palabra, hexadecimal, RGB, etc. ejemplo: <code>red</code>, <code>green</code>, <code>#ff0000</code>, etc.</li>
+            <li><b>href</b>.- para enlaces su valor puede ser la dirección de un carpeta o URL.</li>
+            <li><b>height</b>.- para definir altura, su valor puede ser una medida con su unidad de medida, por ejemplo: <code>10px</code>, <code>12em</code>, <code>100%</code>.</li>
+            <li><b>width</b>.- define el ancho y su valor puede ser cualquier medida con su respectiva unidad de medida.</li>
+        </ul>
+        <h4>Ejemplos</h4>
+        <p>Por ejemplo el atributo <strong>align</strong> con su valor en <strong>center</strong> aplicado a un párrafo hará que el texto este alineado al centro.</p>
+        <fieldset>
+            <code>
+                &lt;p align="center"&gt;Este es un párrafo alineado al centro&lt;/p&gt; 
+            </code>
+            <p>El resultado se visualiza algo así:</p>
+            <p align="center">Este es un párrafo alineado al centro</p>
+        </fieldset>
+        <p>Además probemos los otros valores como el de derecha e izquierda.</p>
+        <fieldset>
+            <code>
+                &lt;p align="right"&gt;Este es un párrafo alineado a la derecha&lt;/p&gt;
+            </code>
+            <p>El resultado se visualiza algo así:</p>
+            <p align="right">Este es un párrafo alineado a la derecha</p>
+        </fieldset>
+        <br />
+        <fieldset>
+            <code>
+                &lt;p align="left"&gt;Este es un párrafo alineado a la izquierda&lt;/p&gt;
+            </code>
+            <p>El resultado se visualiza algo así:</p>
+            <p align="left">Este es un párrafo alineado a la izquierda.</p>
+        </fieldset>
+    </section>
+    <section>
+        <h2>El Atributo style</h2>
+        <p>El atributo <code>style</code> sirve para agregar estilo a los elementos HTML, la apariencia de los elementos que conocimos hasta ahora y los que aprenderemos en lecciones posteriores pueden ser controlados mediante una enorme variedad propiedades y valores.</p>
+        <h3>Aplicando <code>style</code>:</h3>
+        <p>El atributo <code>style</code> se declara como cualquier otro atributo HTML, su valor puede contener varias declaraciones de estilo separadas por espacio y eso lo hace diferente a otros atributos.</p>
+        <p>A grandes rasgos, una declaración consiste en una propiedad y su respectivo valor, una declaración siempre tiene la siguiente forma: <code><b>propiedad: valor</b></code>; primero se escribe la propiedad seguido de dos puntos para definir su valor y finamente se cierra con un punto y coma (;)</p>
+        <h3>Ejemplo:</h3>
+        <fieldset>
+            <code>
+                &lt;p style="font-size: 14px; font-family: Lato; color: #1d1778; background-color: yellow; padding: 12px; margin: 10px; width: 100px; border-style: dotted; border-color: #000000; border-width: 5px;"> Este es un párrafor con estilo, gracias al atributo style...&lt;/p&gt;
+            </code>
+            <p>El resultado se visualiza algo así:</p>
+            <p style="font-size: 14px; font-family: Lato; color: #1d1778; background-color: yellow; padding: 12px; margin: 10px; width: 100px; border-style: dotted; border-color: #000000; border-width: 5px;">Este es un párrafor con estilo, gracias al atributo style...</p>
+        </fieldset>
+        <p>¿Que acaba de suceder? te preguntarás, pues simplemente hemos aplicado el atributo style con una variedad de propiedades y valores; por ahora no deberías preocuparte por entender, y conocer todas las propiedades disponibles, simplemente ten en cuenta que style sirve para poner estilo, además no es la mejor forma de realizar esto, pues <b>existe CSS</b> un lenguaje pensado para estilo.</p>
+        <p>Al culminar esta "guía básica" de HTML estarás listo para CSS, por ahora continua con lo que sigue:).</p>
+    </section>
+    <footer>
+        <a href="index.html">Regresar al índice</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas en HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Listas en HTML - Cómo crear y poner viñetas guapas</h1>
+    </header>
+    <section>
+        <p>Las <strong>listas en html</strong> son elementos muy importantes de alto significado semántico, en esta ocasión aprenderemos todo sobre ellas, además aprenderemos a hacer listas ordenadas y sin ordenar, con viñetas de varios tipos, etc. sin más, empecemos con la lección.</p>
+    </section>
+    <section>
+        <h2>Listas NO ordenadas &lt;ul&gt; en HTML</h2>
+        <p>Una <b>lista no ordenada</b> en HTML es aquella en la que los elementos no están enumerados ni marcados por algún caracter que designe orden. Los elementos están simplemente listadas con alguna viñeta predeterminada como puede ser un punto u otro tipo como veremos más adelante.</p>
+        <h3>Etiqueta &lt;ul&gt;</h3>
+        <p>Una etiqueta <code>&lt;ul&gt;</code> contiene a todas los elementos de la lista y dentro de ella irán los atributos que afectan a toda la lista en bloque.</p>
+        <h3>Etiqueta &lt;li&gt;</h3>
+        <p>Los elementos de la lista propiamente dichos, se especifican en una etiqueta <code>&lt;li&gt;</code>, de tal manera que cada elemento es independiente de otro elemento.</p>
+        <div>
+            <fieldset>
+                <legend>Meses del año</legend>
+                <code>
+                    <pre>
+                        &lt;ul&gt;
+                            &lt;li&gt;enero&lt;/li&gt;
+                            &lt;li&gt;febrero&lt;/li&gt;
+                            &lt;li&gt;marzo&lt;/li&gt;
+                            &lt;li&gt;abril&lt;/li&gt;
+                        &lt;/ul&gt;
+                    </pre>
+                </code>
+            </fieldset>
+            <fieldset>
+                <legend>El resultado</legend>
+                <ul>
+                    <li>enero</li>
+                    <li>febrero</li>
+                    <li>marzo</li>
+                    <li>abril</li>
+                </ul>
+            </fieldset>
+        </div>
+    </section>
+    <section>
+        <h2>Listas ordenadas</h2>
+        <p>Una lista ordenada en HTML es aquella en la que los elementos estan enumerados o marcado con algún signo alfanumérico que indique el orden de los elementos.</p>
+        <h3>Etiqueta &lt;ol&gt;</h3>
+        <p>Se utiliza la etiqueta html <code>&lt;ol&gt;</code> para crear listas ordenadas, entre la etiqueta de apertura y cierre irán los elementos de la lista dentro de una etiqueta <code>&lt;li&gt;</code> respectivamente.</p>
+        <h3>Etiqueta &lt;li&gt;</h3>
+        <p>En cualquier caso la etiqueta <code>&lt;li&gt;</code> sirve para indicar los elementos de la lista, independientemente de si son ordenadas o desordenadas.</p>
+        <div>
+            <fieldset>
+                <legend>Días de la semana</legend>
+                <code>
+                    <pre>
+                        &lt;ol&gt;
+                            &lt;li&gt;lunes&lt;/li&gt;
+                            &lt;li&gt;martes&lt;/li&gt;
+                            &lt;li&gt;miércoles&lt;/li&gt;
+                            &lt;li&gt;jueves&lt;/li&gt;
+                            &lt;li&gt;viernes&lt;/li&gt;
+                            &lt;li&gt;sábado&lt;/li&gt;
+                            &lt;li&gt;domingo&lt;/li&gt;
+                        &lt;/ol&gt;
+                    </pre>
+                </code>
+            </fieldset>
+            <fieldset>
+                <legend>El resultado</legend>
+                <ol>
+                    <li>lunes</li>
+                    <li>martes</li>
+                    <li>miércoles</li>
+                    <li>jueves</li>
+                    <li>viernes</li>
+                    <li>sábado</li>
+                    <li>domingo</li>
+                </ol>
+            </fieldset>
+        </div>
+    </section>
+    <section>
+        <h2>Listas dentro de listas o sublistas</h2>
+        <p>Ingresando etiquetas <code>&lt;ul&gt;</code> o <code>&lt;ol&gt;</code> justo después de una etiqueta <code>&lt;li&gt;</code> podemos conseguir sublistas o listas dentro de listas.</p>
+        <h4>Pongámoslo a prueba</h4>
+        <div>
+            <fieldset>
+                <legend>Código de sublistas</legend>
+                <code>
+                    <pre>
+                        &lt;ul&gt;
+                            &lt;li&gt;América&lt;/li&gt;
+                            &lt;ol&gt;
+                                &lt;li&gt;América del norte&lt;/li&gt;
+                                &lt;li&gt;América central&lt;/li&gt;
+                                &lt;li&gt;América del sur&lt;/li&gt;
+                            &lt;/ol&gt;
+                            &lt;li&gt;Antártida&lt;/li&gt;
+                            &lt;ol&gt;
+                                &lt;li&gt;Antártida oriental&lt;/li&gt;
+                                &lt;li&gt;Antártida occidental&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/ul&gt;
+                    </pre>
+                </code>
+            </fieldset>
+            <fieldset>
+                <legend>El resultado</legend>
+                <ul>
+                    <li>América</li>
+                    <ol>
+                        <li>América del norte</li>
+                        <li>América central</li>
+                        <li>América del sur</li>
+                    </ol>
+                    <li>Antártida</li>
+                    <ol>
+                        <li>Antártida oriental</li>
+                        <li>Antártida occidental</li>
+                    </ol>
+                </ul>
+            </fieldset>
+        </div>
+    </section>
+    <section>
+        <h2>Lista de terminologías o lista de definiciones en HTML</h2>
+        <p>Aprenderemos a como <b>hacer una lista de terminologías o definiciones en html</b> con sus respectivas <b>etiquetas</b>. Esto nos servirá para dar un significado semántico a los términos y sus definiciones.</p>
+        <section>
+            <ul>
+                <li><code><strong>Etiqueta &lt;dl&gt;</strong></code>: Esta etiqueta se utiliza para crear una lista de definiciones si lo deseamos.</li>
+                <li><code><strong>Etiqueta &lt;dt&gt;</strong></code>: Esta etiqueta contiene el término que queremos definir.</li>
+                <li><code><strong>Etiqueta &lt;dd&gt;</strong></code>: Esta etiqueta contiene la definición del término que le precede.</li>
+            </ul>
+        </section>
+        <section>
+            <fieldset>
+                <code>
+                    &lt;dl&gt;&lt;dt&gt;Mamífero&lt;/dt&gt;&lt;dd&gt; Espiece de animales que maman de su madre.&lt;/dd&gt;&lt;/dl&gt;
+                    &lt;dl&gt;&lt;dt&gt;Vertebrado&lt;/dt&gt;&lt;dd&gt; Espiece de animales que posee huesos.&lt;/dd&gt;&lt;/dl&gt;
+                    &lt;dl&gt;&lt;dt&gt;Reptil&lt;/dt&gt;&lt;dd&gt; Espiece de animales que maman de arastran por el suelo.&lt;/dd&gt;&lt;/dl&gt;
+                </code>
+            </fieldset>
+            <fieldset>
+                <legend>El resultado:</legend>
+                <dl><dt>Mamífero</dt><dd>Espiece de animales que maman de su madre.</dd></dl>
+                <dl><dt>Vertebrado</dt><dd>Especie de animales que poseen huesos</dd></dl>
+                <dl><dt>Reptil</dt><dd>Especie de animales que se arrastran por el suelo</dd></dl>
+                <hr />
+                <small>La sangría francesa de toda la vida... en word.</small>
+            </fieldset>
+        </section>
+    </section>
+    <section>
+        <h2>Cómo poner viñetas en listas de HTML</h2>
+        <p>Poner viñetas en una lista html es tan fácil como veremos a continuación, se trata de poner estilo a nuestro elemento de lista y para ello emplearemos el atributo <code>STYLE</code> con unos valores pensados para este fin, veamos:</p>
+        <h3>Atributo style</h3>
+        <p>Para crear listas con viñetas en HTML utilizamos el atributo style, esto indicará que la lista tendrá un estilo especial, emplea una propiedad y en este caso será la propiedad de <code><b>list-style-type</b></code> y básicamente hace referencia al tipo de viñeta, finalmente el valor de dicha propiedad determina el tipo de viñeta que se mostrará, en nuestro caso queremos poner viñetas diferentes a los predeterminados ¿verdad? Pues bien, conozcamos los posibles valores que puede tomar y su respectiva descripción.</p>
+        <h4>Valores para tipos de viñeta HTML</h4>
+        <section>
+            <ul>
+                <li><code><small>disc</small></code>: este es el valor predeterminado.</li>
+                <li><code><small>circle</small></code>: muestra un círculo hueco.</li>
+                <li><code><small>square</small></code>: muestra un cuadrado.</li>
+                <li><code><small>decimal</small></code>: muestra un número decimal, que comienza con 1.</li>
+                <li><code><small>lower-roman</small></code>: muestra un número romano en minúscula (i, ii, etc).</li>
+                <li><code><small>upper-roman</small></code>: muestra un número romano en mayúscula (I, II, etc).</li>
+            </ul>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Ejemplo:</legend>
+                <ul style="list-style-type: circle;">
+                    <li>Primera lista</li>
+                    <li>Primera lista</li>
+                    <li>Primera lista</li>
+                </ul>
+                <ul style="list-style-type: square">
+                    <li>Segunda lista</li>
+                    <li>Segunda lista</li>
+                    <li>Segunda lista</li>
+                </ul>
+                <ul style="list-style-type: upper-roman;">
+                    <li>Tercera lista</li>
+                    <li>Tercera lista</li>
+                    <li>Tercera lista</li>
+                </ul>
+                <ul style="list-style-type: lower-roman;">
+                    <li>Cuarta lista</li>
+                    <li>Cuarta lista</li>
+                    <li>Cuarta lista</li>
+                </ul>
+            </fieldset>
+        </section>
+    </section>
+    <section>
+        <h2>Cómo poner imágenes o íconos como viñetas en listas de HTML</h2>
+        <p>Poner imágenes como viñetas de listas HTML es tan sencillo como emplear la propiedad <code>list-style-image</code> y especificar cual es la imagen en el campo de los valores, ya sea indicando la dirección URL de la imagen o indicando su nombre en caso se encuentre almacenada en la misma carpeta del documento HTML.</p>
+        <section>
+            <fieldset>
+                <legend>Ejemplo:</legend>
+                <pre>
+                    <code>
+                        &lt;ul style="list-style-image:URL(https://google.com)"&gt;
+                            &lt;li&gt;Primer elemento&lt;/li&gt;
+                            &lt;li&gt;Segundo elemento&lt;/li&gt;
+                            &lt;li&gt;Tercer elemento&lt;/li&gt;
+                        &lt;/ul&gt;
+                    </code>
+                </pre>
+            </fieldset>
+        </section>
+    </section>
+</body>
+</html>

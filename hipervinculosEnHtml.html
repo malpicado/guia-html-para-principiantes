@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipervínculos en HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Cómo poner hipervínculos o enlaces en HTML</h1>
+    </header>
+    <section>
+        <p>Aprendamos a colocar hipervínculos en HTML a nuestras páginas web, es una tarea muy fácil y a la vez muy útil para mejorar la usabilidad de una página, nos da el poder de dirigir a los usuarios a otras direcciones URL, además de ello conoceremos los atributos que corresponden a enlaces HTML.</p>
+    </section>
+    <section>
+        <h2>¿Cómo hacer un hipervínculo en HTML?</h2>
+        <p>Colocar un enlace en HTML a un texto es mucho más fácil de lo que puedas imaginar, es tan simple como abrir y cerrar la etiqueta para enlace son sus respectivos atributos y valores.</p>
+        <h3>Etiqueta &lt;a&gt;</h3>
+        <p>Para definir enlaces o <b>hipervínculos</b> utilizaremos la etiqueta &lt;a&gt; de la siguiente manera:</p>
+        <fieldset>
+            <code>
+                &lt;a&gt;texto del enlace&lt;/a&gt;
+            </code>
+        </fieldset>
+        <p>Sin embargo aún no hemos indicado a dónde debe apuntar dicho enlace, por lo cual aún no funciona; para ello haremos uso del atributo href, como veremos más adelante.</p>
+    </section>
+    <section>
+        <h2>Atributos para enlaces HTML</h2>
+        <p>Existen varios atributos para los enlaces, en esta lección los desarrollamos detalladamente cada uno de ellos, a continuación los nombramos:</p>
+        <nav>
+            <ul>
+                <li><code>href</code></li>
+                <li><code>target</code></li>
+                <li><code>rel</code></li>
+            </ul>
+        </nav>
+        <p>Existen muchos más, sin embargo, estos te son los principales. Ahora vemos cómo se usan y los valores que pueden tomar estas.</p>
+    </section>
+    <section>
+        <h3>Atributo href para enlaces HTML</h3>
+        <p>Para indicar la dirección destino del enlace utilizaremos el atributo href, en todo caso quedaría de la siguiente manera.</p>
+        <fieldset>
+            <code>
+                &lt;a href="URL"&gt; texto ancla o "anchor text"&lt;/a&gt;
+            </code>
+        </fieldset>
+        <nav>
+            <ul>
+                <li>El atributo <code>href</code> contiene el valor de la url de destino, es decir, el link o dirección web.</li>
+                <li>El texto ancla es el texto visible, o el texto que contiene el enlace, el texto donde se hará clic.
+                </li>
+                <li><code>&lt;a&gt;</code> puede ir dentro de un párrafo para un texto ancla específico.</li>
+                <li>Se puede colocar enlace tanto a texto como a imágenes.</li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <h3>Ejemplo de hipervínculo en HTML</h3>
+        <p>Ahora toca ver un ejemplo de cómo sería un enlace escrito en HTML hacia una página web externa.</p>
+        <section>
+            <fieldset>
+                <code>
+                    Haz clic en &lt;a href="https://malpicado.com/ruta-de-aprendizaje-programacion/" target="_blank"&gt;<strong>este enlace</strong>&lt;/a&gt; para ir a la ruta de aprendizaje especializada en <b>JavaScript</b> que hemos diseñado.
+                </code>
+                <hr />
+                <code>
+                    &lt;p&gt;Este es un párrafo bastante bueno para ejemplo de hipervínculo en HTML, donde colocaremos un enlace html para que seas cómo se inserta un enlace en &lt;a href="https://codealo.dev" target="_blank"&gt;este pedazo de texto&lt;/a&gt; donde si haces clic irás a la web de Codealo.&lt;/p&gt;
+                </code>
+            </fieldset>
+        </section>
+        <section>
+            <p>El resultado se visualiza algo así:</p>
+            <section>
+                <fieldset>
+                    <code>
+                        Haz clic en <a href="https://malpicado.com/ruta-de-aprendizaje-programacion/" target="_blank"><strong>este enlace</strong></a> para ir a la ruta de aprendizaje especializada en <b>JavaScript</b> que hemos diseñado.
+                    </code> 
+                    <hr />
+                    <code>
+                        <p>Este es un párrafo bastante bueno para ejemplo de hipervínculo en HTML, donde colocaremos un enlace html para que seas cómo se inserta un enlace en <a href="https://codealo.dev" target="_blank"><b>este pedazo de texto</b></a> donde si haces clic irás a la web de Codealo.</p>
+                    </code>
+                </fieldset>
+            </section>
+        </section>
+    </section>
+    <section>
+        <h3>Atributo target para enlaces HTML</h3>
+        <p>Por defecto, los enlaces se abren en una misma ventana del navegador web, <strong>para que el enlace se habrá en una nueva ventana el atributo target toma el valor “_blank”</strong> de la siguiente manera:</p>
+        <section>
+            <fieldset>
+                <code>
+                    &lt;a href="https://malpicado.com" target="_blank"&gt;este enlace se abrirá en una nueva ventana de tu navegador&lt;/a&gt;
+                </code>
+            </fieldset>
+        </section>
+    </section>
+    <section>
+        <h3>Atrbuto rel para enlaces HTML</h3>
+        <p>El atributo <code>rel</code> de HTML sirve para indicar la relación que existe entre la página del cual sale el enlace y la página que recibe el enlace, muy importante para indicar a los motores de búsqueda dicha relación y también a los usuarios.</p>
+        <h4>Valores para el atributo rel</h4>
+        <section>
+            <ul>
+                <li><code>sponsored</code>: para indicar que el enlace es un enlace de pago (enlace patrocinado).</li>
+                <li><code>ugc</code>: indica que el enlace es un enlace general por el usuario, por ejemplo, un enlace escrito en un comentario de una entrada de blog.</li>
+                <li><code>nofollow</code>: indica a los motores de búsqueda que no siga el enlace como si fuera natural.</li>
+            </ul>
+        </section>
+        <h5>Ejemplo:</h5>
+        <section>
+            <fieldset>
+                <code>
+                    &lt;a href="https://twitch.tv/malpicado" rel="nofollow"&gt;Este es un enlace nofollow de ejemplo... pero siquieres puedes seguirme en twitch 😉&lt;/a&gt; 
+                </code>
+            </fieldset>
+        </section>
+    </section>
+    <div>
+        <p>Por ahora es suficiente, en la siguiente lección continuaremos aprendiendo a manejar las etiquetas de imagen y varias cositas más.</p>
+    </div>
+    <footer>
+        <a href="index.html">Regresar al índice</a>
+    </footer>
+</body>
+</html>
