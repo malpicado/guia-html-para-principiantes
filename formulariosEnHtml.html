@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <header>
+        <h1>¿Cómo crear formularios en HTML?</h1>
+    </header>
+    <section>
+        <p>Exploremos cómo crear formularios en HTML, cuáles son las etiquetas para crear campos y los atributos correspondientes para agregar características y funcionalidad, además veremos ejemplos concretos de formularios hechos en html.</p>
+        <p>Los formularios son elementos de gran importancia y utilidad al momento de recopilar información de nuestros usuarios a través de una página web, es por ello que considero de gran importancia dedicar una lección exclusiva para su desarrollo ¡Empecemos!</p>
+    </section>
+    <section>
+        <h2>Cómo crear un formulario en HTML</h2>
+        <p>Crear un formulario en html implica construir los campos de información, estos pueden ser: campos de texto, de número, selectores, desplegables, casillas de verificación y entre otras más.</p>
+        <p>Como ya es sabido, en html se emplean etiquetas para crear los diversos elementos existentes, y el caso de los formularios no es la excepción, para crear los componentes del formulario HTML también haremos uso de una variedad de etiquetas y atributos, los mismos que conoceremos a continuación.</p>
+    </section>
+    <section>
+        <h3>Etiqueta &lt;form&gt;</h3>
+        <p>Utilizaremos la etiqueta <code>&lt;form&gt;</code> para indicar al navegador que el elemento será un formulario.</p>
+        <p><code>&lt;form&gt;</code>  se emplea para cualquier tipo de formulario HTML, ya sea uno de contacto, suscripción, registro, login, encuesta, etc.</p>
+        <fieldset>
+            <legend><strong>Este es el código</strong></legend>
+            <code><pre>
+                &lt;form&gt;
+                "Aquí irán los campos del formulario."
+                &lt;/form&gt;
+            </pre></code>
+        </fieldset>
+        <h3>Etiqueta &lt;input&gt;</h3>
+        <p>Crear los campos en el formulario es tan sencillo como utilizar la etiqueta <code>&lt;input&gt;</code> antecedida de lo que deseas obtener. Por ejemplo:</p>
+        <fieldset>
+            <legend><strong>Este es el código</strong></legend>
+            <code><pre>
+                &lt;form&gt;
+                    Tu nombre: &lt;input/&gt;
+                    Tu apellido: &lt;input/&gt;
+                &lt;/form&gt;
+            </pre></code>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend><strong>RESULTADO:</strong></legend>
+            <form>
+                Tu nombre: <input/>
+                Tu apellido: <input/>
+            </form>
+        </fieldset>
+        <p>Existen varios tipos campos para formularios HTML y también debemos especificar que tipo de campo es un elemento del formulario, para ello aprenderemos a utilizar el atributo <b>TYPE</b> a continuación.</p>
+    </section>
+    <section>
+        <h2>Atributo type</h2>
+        <p>El atributo type va dentro de la etiqueta <code>&lt;input&gt;</code> y su valor indicará que tipo de campo se está creando. Veamos algunos valores que puede tomar el atributo type en un formulario HTML:</p>
+        <p><strong>Valores de atributo type en formularios HTML</strong></p>
+        <ul>
+            <li>Text: para campos de texto</li>
+            <li>Password: para campos de contraseña</li>
+            <li>Checkbox: para casillas de verificación</li>
+            <li>Radio: para casillas de selección</li>
+            <li>Submit: para botones de envío</li>
+            <li>Reset: para botones de resetear formulario</li>
+            <li>File: para campos de selección de archivo</li>
+        </ul>
+        <h2>Ejemplo de formulario HTML con atributo type</h2>
+        <p>En el siguiente ejemplo crearemos un formulario empleando los diversos tipos de campo que aprendimos anteriormente y para organizar y diferenciar mejor cada campo, emplearemos la etiqueta de salto de linea <code>&lt;br/&gt;</code>, veamos:</p>
+        <fieldset>
+            <legend><strong>Este es el código</strong></legend>
+            <code><pre>
+                &lt;form&gt;
+                Nombre: &lt;input type="text"/&gt; &lt;br/&gt;&lt;br/&gt;
+                Apellidos: &lt;input type="text"/&gt; &lt;br/&gt;&lt;br/&gt;
+                Contraseña: &lt;input type="password"/&gt; &lt;br/&gt;&lt;br/&gt;
+                Casilla de verificación: &lt;input type="checkbox"/&gt; &lt;br/&gt;&lt;br/&gt;
+                Casilla de selección: &lt;input type="radio"/&gt; &lt;br/&gt;&lt;br/&gt;
+                Selección de archivo: &lt;input type="file"/&gt; &lt;br/&gt;&lt;br/&gt;
+                Botón de envío: &lt;input type="submit"/&gt; &lt;br/&gt;&lt;br/&gt;
+                &lt;/form&gt;
+            </pre></code>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend><strong>RESULTADO:</strong></legend>
+            <form>
+                Nombre: <input type="text"/> <br/><br/>
+                Apellidos: <input type="text"/> <br/><br/>
+                Contraseña: <input type="password"/> <br/><br/>
+                Casilla de verificación: <input type="checkbox"/> <br/><br/>
+                Casilla de selección: <input type="radio"/> <br/><br/>
+                Selección de archivo: <input type="file"/> <br/><br/>
+                Botón de envío: <input type="submit"/> <br/><br/>
+            </form>
+        </fieldset>
+    </section>
+    <br/>
+    <footer>
+        <a href="index.html">Regresar al índice</a>
+    </footer>
+</body>
+</html>

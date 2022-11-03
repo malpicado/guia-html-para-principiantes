@@ -11,6 +11,307 @@
         <h1>Tablas en HTML ¿Para qué sirven?
         </h1>
     </header>
+    <section>
+        <p>
+            En esta lección <b>aprenderemos a crear tablas en html</b> correctamente desde cero, empezaremos conociendo las etiquetas que definen su estructura y los atributos correspondientes a tablas, poco a poco avanzaremos para conseguir crear tablas complejas e impresionantes de manera fácil; obviamente, veremos códigos para crear tablas que puedes probar, modificar y ver el resultado aquí mismo, prueba el editor de código, sin más preámbulo ¡Empecemos!
+        </p>
+    </section>
+    <section>
+        <h2>¿Cómo crear tablas en HTML?</h2>
+        <p>Para crear tablas en HTML debemos saber que, una tabla es una estructura formada por filas y columnas, las filas son las distribuciones horizontales y las columnas son las distribuciones verticales. Para construir una tabla crearemos dichas filas y columnas mediante etiquetas que aprenderemos en adelante. Para crear e insertar una tabla en HTML, haremos uso de las etiquetas</p>
+        <p>En HTML, la estructura de una tabla tiene que ver con etiquetas, una etiqueta <code>&lt;table&gt;</code> indica que es un elemento de tabla, dentro de ella va otra etiqueta <code>&lt;tr&gt;</code> y esta señala las filas de una tabla y finalmente, dentro de cada fila expresada con etiqueta <code>&lt;tr&gt;</code> va otra etiqueta <code>&lt;td&gt;</code> y es básicamente un cuadrito o CELDA de la tabla contenida en una fila, y dentro de ella irá el contenido deseado; si no lograste captar la idea, no hay problema ¡Lo harás con los ejemplos! sigamos.</p>
+    </section>
+    <section>
+        <h3>Etiqueta &lt;table&gt;</h3>
+        <p>Para crear y definir una tabla en HTML, simplemente empleamos la <b>etiqueta</b> <code>&lt;table&gt;</code>, en el código HTML, veamos.</p>
+        <fieldset>
+            <legend><strong>Se escribe así</strong></legend>
+            <code>
+                <pre>&lt;table&gt;</pre><br />&lt;/table&gt;
+                </pre>
+            </code>
+        </fieldset>
+    </section>
+    <section>
+        <h3>Etiqueta &lt;tr&gt;</h3>
+        <p>Para crear una fila dentro de una tabla (<code>&lt;table&gt;</code>) empleamos la etiqueta <code>&lt;tr&gt;</code>; si deseamos varias filas, entonces crearemos varias etiquetas <code>&lt;tr&gt;</code> con su respectiva etiqueta de cierre. Veamos un ejemplo de una tabla con 3 filas. Por cada <code>&lt;tr&gt;</code> se crea una fila dentro de la tabla.</p>
+        <fieldset>
+            <legend><strong>Ejemplo de tabla con 3 filas</strong></legend>
+            <code>
+                <pre>&lt;table&gt;</pre>
+                    <pre>&lt;tr&gt;</pre>
+                    <pre>&lt;/tr&gt;</pre><br />
+                    <pre>&lt;tr&gt;</pre>
+                    <pre>&lt;/tr&gt;</pre><br />
+                    <pre>&lt;tr&gt;</pre>
+                    <pre>&lt;/tr&gt;</pre>
+                <pre>&lt;/table&gt;</pre>
+            </code>
+        </fieldset>
+    </section>
+    <section>
+        <h3>Etiqueta &lt;td&gt;</h3>
+        <p>La etiqueta <code>&lt;td&gt;</code> va dentro de <code>&lt;tr&gt;</code>. Por cada <code>&lt;td&gt;</code> se crea una columna dentro de la fila <code>&lt;tr&gt;</code>.</p>
+        <p>La etiqueta <code>&lt;td&gt;</code> actúa como contenedor, dentro de ella irán los contenidos de tabla que pueden ser texto, imágenes, e incluso más tablas y otros elementos HTML.</p>
+        <fieldset>
+            <legend><strong>Ejemplo de tabla con 3 contenedores</strong></legend>
+            <code>
+                <pre>
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Primer contenedor&lt;/td&gt;
+                        &lt;td&gt;Segundo contenedor&lt;/td&gt;
+                        &lt;td&gt;Tercer contenedor&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                </pre>
+            </code>
+        </fieldset>
+        <p>Para que entiendas, capta esto: dentro de las tablas <code>&lt;table&gt;</code> van las filas <tr> y dentro de las filas van las columnas <td>, además, dentro de las tablas pueden ir varias filas y dentro de las filas pueden ir varias columnas como veremos más adelante.</p>
+        <fieldset>
+            <legend><strong>Resultado:</strong></legend>
+            <table>
+                <tr>
+                    <td>Primer contenedor |</td>
+                    <td>Segundo contenedor |</td>
+                    <td>Tercer contenedor</td>
+                </tr>
+            </table>
+        </fieldset>
+    </section>
+    <section>
+        <h3>Atributo border</h3>
+        <p>Cuando creamos una tabla, por defecto no tiene ningún borde, parece una lista sin estilo.</p>
+        <p>Para ponerle borde a la tabla utilizamos el atributo border y en su valor la dimensión de ese borde.</p>
+        <p>Como ejemplo veamos la misma tabla anterior pero en este caso le ponemos borde de 2px:</p>
+        <fieldset>
+            <legend><strong>Ejemplo de tabla con 3 columnas</strong></legend>
+            <code>
+                <pre>
+                &lt;table border="2px"&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Primera columna&lt;/td&gt;
+                        &lt;td&gt;Segunda columna&lt;/td&gt;
+                        &lt;td&gt;Tercera columna&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                </pre>
+            </code>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Resultado:</strong></legend>
+            <table border="2px">
+                <tr>
+                    <td>Primera columna</td>
+                    <td>Segundo columna</td>
+                    <td>Tercer columna</td>
+                </tr>
+            </table>
+        </fieldset>
+        <p>Ahora el resultado ya tiene un borde, por defecto, veremos que cada celda o elemento tiene su propio borde. Más adelante aprenderemos cómo modificar y poner estilos a tablas.</p>
+    </section>
+    <section>
+        <h3>Etiqueta &lt;th&gt;</h3>
+        <p>Utilizaremos <code>&lt;th&gt;</code> para poner encabezado a la tabla en su primera fila. Cada elemento <code>&lt;th&gt;</code> será el encabezado de una columna, veamos un ejemplo y como se ve:</p>
+        <fieldset>
+            <legend><strong>Este es el código</strong></legend>
+            <code>
+                <pre>
+                &lt;table border="1px"&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Lunes&lt;/th&gt;
+                        &lt;th&gt;Martes&lt;/th&gt;
+                        &lt;th&gt;Miercoles&lt;/th&gt;
+                        &lt;th&gt;Jueves&lt;/th&gt;
+                        &lt;th&gt;Viernes&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Matematica&lt;/td&gt;
+                        &lt;td&gt;Ciencias&lt;/td&gt;
+                        &lt;td&gt;Matematica&lt;/td&gt;
+                        &lt;td&gt;Sociales&lt;/td&gt;
+                        &lt;td&gt;Arte&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Inglés&lt;/td&gt;
+                        &lt;td&gt;Comunicación&lt;/td&gt;
+                        &lt;td&gt;Biologia&lt;/td&gt;
+                        &lt;td&gt;Historia&lt;/td&gt;
+                        &lt;td&gt;Física&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Computación&lt;/td&gt;
+                        &lt;td&gt;Historia&lt;/td&gt;
+                        &lt;td&gt;Economía&lt;/td&gt;
+                        &lt;td&gt;Química&lt;/td&gt;
+                        &lt;td&gt;Redacción&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                </pre>
+            </code>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend><strong>Resultado</strong></legend>
+            <table border="1px">
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr>
+                    <td>Matematicas</td>
+                    <td>Ciencias</td>
+                    <td>Matematicas</td>
+                    <td>Sociales</td>
+                    <td>Arte</td>
+                </tr>
+                <tr>
+                    <td>Inglés</td>
+                    <td>Comunicación</td>
+                    <td>Biología</td>
+                    <td>Historia</td>
+                    <td>Física</td>
+                </tr>
+                <tr>
+                    <td>Computación</td>
+                    <td>Historia</td>
+                    <td>Economía</td>
+                    <td>Química</td>
+                    <td>Redacción</td>
+                </tr>
+            </table>
+        </fieldset>
+        <p>Como podemos notar, los elementos dentro de las etiquetas de encabezado de tabla <code>&lt;th&gt;</code> se resaltan, de tal manera que poseen un significado semántico.</p>
+        <p>A continuación aprenderemos a combinar filas y columnas, algo que será de mucha utilidad ¡Ya lo verás!</p>
+    </section>
+    <section>
+        <h2>Ejemplo completo de tablas en HTML</h2>
+        <p>Con todo lo aprendido en esta lección, crearemos una tabla completa con código HTML,y para este ejemplo vamos a crear un horario de cursos.</p>
+        <fieldset>
+            <legend><strong>Este es el código</strong></legend>
+            <code>
+                <pre>
+                &lt;table border="1px" width="80%" height ="300px" style="border-collapse:collapse; text-align:center;"&gt;
+                    &lt;thead bgcolor="#018001" height ="40px"&gt;
+                        &lt;tr&gt;
+                            &lt;td colspan="6"&gt;HORARIO DE STREAM&lt;/tr&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Hora &lt;/td&gt;
+                            &lt;td&gt;Lunes &lt;/td&gt;
+                            &lt;td&gt;Martes &lt;/td&gt;
+                            &lt;td&gt;Miercoles &lt;/td&gt;
+                            &lt;td&gt;Jueves &lt;/td&gt;
+                            &lt;td&gt;Viernes &lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;15:30 - 16:30&lt;/td&gt;
+                            &lt;td&gt;No hay stream&lt;/td&gt;
+                            &lt;td&gt;Charlamos un ratillo&lt;/td&gt;
+                            &lt;td&gt;Charlamos un ratillo&lt;/td&gt;
+                            &lt;td&gt;Charlamos un ratillo&lt;/td&gt;
+                            &lt;td&gt;Charlamos un ratillo&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;16:30 - 17:30&lt;/td&gt;
+                            &lt;td&gt;No hay stream&lt;/td&gt;
+                            &lt;td&gt;Empezamos curso de la ruta de programación&lt;/td&gt;
+                            &lt;td&gt;Empezamos curso de la ruta de programación&lt;/td&gt;
+                            &lt;td&gt;Empezamos curso de la ruta de programación&lt;/td&gt;
+                            &lt;td&gt;Empezamos curso de la ruta de programación&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;17:30 - 18:30&lt;/td&gt;
+                            &lt;td&gt;No hay stream&lt;/td&gt;
+                            &lt;td&gt;Continuamos la clase en vivo y charlamos de algo random con muchas risas&lt;/td&gt;
+                            &lt;td&gt;Continuamos la clase en vivo y charlamos de algo random con muchas risas&lt;/td&gt;
+                            &lt;td&gt;Continuamos la clase en vivo y charlamos de algo random con muchas risas&lt;/td&gt;
+                            &lt;td&gt;Continuamos la clase en vivo y charlamos de algo random con muchas risas&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;18:30 - 19:30&lt;/td&gt;
+                            &lt;td&gt;No hay stream&lt;/td&gt;
+                            &lt;td&gt;Hacemos algún sorteo en vivo con los que estén en el chat&lt;/td&gt;
+                            &lt;td&gt;Hacemos algún sorteo en vivo con los que estén en el chat&lt;/td&gt;
+                            &lt;td&gt;Hacemos algún sorteo en vivo con los que estén en el chat&lt;/td&gt;
+                            &lt;td&gt;Hacemos algún sorteo en vivo con los que estén en el chat&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                    &lt;tfoot bgcolor="#f8ee1e" &gt;
+                        &lt;tr&gt;
+                            &lt;td colspan="6"&gt;Horario de stream en &lt;a href="https://twitch.tv/malpicado" target="_blank">el canal del pepinillo programador.&lt;/a&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tfoot&gt;
+                &lt;/table&gt;
+                </pre>
+            </code>
+        </fieldset>
+        <br />
+        <fieldset>
+            <label>><strong>Resultado visual:</strong></label>
+            <table border="1px" width="80%" height ="300px" style="border-collapse:collapse; text-align:center;">
+                <thead bgcolor="#018001" height ="40px">
+                    <tr>
+                        <td colspan="6">HORARIO DE STREAM</tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hora </td>
+                        <td>Lunes </td>
+                        <td>Martes </td>
+                        <td>Miercoles </td>
+                        <td>Jueves </td>
+                        <td>Viernes </td>
+                    </tr>
+                    <tr>
+                        <td>15:30 - 16:30</td>
+                        <td>No hay stream</td>
+                        <td>Charlamos un ratillo</td>
+                        <td>Charlamos un ratillo</td>
+                        <td>Charlamos un ratillo</td>
+                        <td>Charlamos un ratillo</td>
+                    </tr>
+                    <tr>
+                        <td>16:30 - 17:30</td>
+                        <td>No hay stream</td>
+                        <td>Empezamos curso de la ruta de programación</td>
+                        <td>Empezamos curso de la ruta de programación</td>
+                        <td>Empezamos curso de la ruta de programación</td>
+                        <td>Empezamos curso de la ruta de programación</td>
+                    </tr>
+                    <tr>
+                        <td>17:30 - 18:30</td>
+                        <td>No hay stream</td>
+                        <td>Continuamos la clase en vivo y charlamos de algo random con muchas risas</td>
+                        <td>Continuamos la clase en vivo y charlamos de algo random con muchas risas</td>
+                        <td>Continuamos la clase en vivo y charlamos de algo random con muchas risas</td>
+                        <td>Continuamos la clase en vivo y charlamos de algo random con muchas risas</td>
+                    </tr>
+                    <tr>
+                        <td>18:30 - 19:30</td>
+                        <td>No hay stream</td>
+                        <td>Hacemos algún sorteo en vivo con los que estén en el chat</td>
+                        <td>Hacemos algún sorteo en vivo con los que estén en el chat</td>
+                        <td>Hacemos algún sorteo en vivo con los que estén en el chat</td>
+                        <td>Hacemos algún sorteo en vivo con los que estén en el chat</td>
+                    </tr>
+                </tbody>
+                <tfoot bgcolor="#f8ee1e" >
+                    <tr>
+                        <td colspan="6">Horario de stream en <a href="https://twitch.tv/malpicado" target="_blank">el canal del pepinillo programador.</a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </fieldset>
+    </section>
     <footer>
         <a href="index.html">Regresar al índice</a>
     </footer>
